@@ -6,18 +6,16 @@
   <title>CVBoostGPT – AI Resume Generator</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(145deg, #f9fafb, #dbeafe);
-      color: #111827;
+      background-color: #0f172a;
+      color: #f8fafc;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #1f2937;
+      background-color: #1e293b;
       color: white;
       padding: 3rem 1rem 1rem;
       text-align: center;
@@ -32,12 +30,12 @@
     header p {
       font-size: 1.25rem;
       margin-top: 0.5rem;
-      color: #d1d5db;
+      color: #cbd5e1;
     }
     .hero-subtitle {
       font-size: 1.1rem;
       margin-top: 1.5rem;
-      color: #cbd5e1;
+      color: #94a3b8;
     }
     .hero-icon {
       position: absolute;
@@ -55,9 +53,9 @@
       max-width: 700px;
       margin: 3rem auto;
       padding: 2rem;
-      background: white;
+      background: #1e293b;
       border-radius: 0.75rem;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
       animation: fadeIn 0.8s ease-in-out;
     }
     h2 {
@@ -71,7 +69,7 @@
       margin: 2rem 0;
     }
     .feature {
-      background-color: #eff6ff;
+      background-color: #334155;
       padding: 1rem 1.25rem;
       border-left: 4px solid #3b82f6;
       border-radius: 0.5rem;
@@ -95,45 +93,50 @@
       transform: scale(1.03);
       box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
     }
-    .testimonials {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid #e5e7eb;
-    }
-    .testimonial {
-      font-style: italic;
-      margin-bottom: 1.5rem;
-      color: #374151;
-    }
     .stars {
       text-align: center;
       font-size: 1.25rem;
       margin-top: 2rem;
       color: #facc15;
     }
+    .testimonial-carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+    }
+    .testimonial-box {
+      background-color: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      min-width: 250px;
+      scroll-snap-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .testimonial-box p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-box span {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
     .stats {
       margin: 2rem auto 1rem;
-      background: #f0f9ff;
+      background: #334155;
       padding: 1.5rem;
       border-radius: 0.75rem;
       text-align: center;
       font-size: 1.1rem;
-      color: #1e3a8a;
-    }
-    .demo {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .demo img {
-      max-width: 100%;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      color: #f8fafc;
     }
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: #94a3b8;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
@@ -165,19 +168,37 @@
     </div>
 
     <div class="testimonials">
-      <h3>What others are saying:</h3>
-      <div class="testimonial">"I landed 3 interviews in one week thanks to this resume!" – Sarah L.</div>
-      <div class="testimonial">"Looks like I paid a professional. Blown away." – Ahmed R.</div>
-      <div class="testimonial">"I was skeptical at first... but this actually works." – Melissa J.</div>
+      <h3 style="text-align:center;">What others are saying:</h3>
+      <div class="testimonial-carousel">
+        <div class="testimonial-box">
+          <p>"I landed 3 interviews in one week thanks to this resume!"</p>
+          <span>– Sarah L.</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"Looks like I paid a professional. Blown away."</p>
+          <span>– Ahmed R.</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"I was skeptical at first... but this actually works."</p>
+          <span>– Melissa J.</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"Best $10 I've spent this year."</p>
+          <span>– Daniel P.</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"I used this and got hired within days."</p>
+          <span>– Emily Z.</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"This tool saved me hours of stress."</p>
+          <span>– Kevin W.</span>
+        </div>
+      </div>
     </div>
 
     <div class="stats">
       ✅ Over <strong>5,000</strong> job seekers boosted their career with CVBoostGPT in the past 30 days.
-    </div>
-
-    <div class="demo">
-      <h3>📽️ See it in action:</h3>
-      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWkyM3Brc2x3OXU4OHZ1cTVhdDJyNzNoYmdoYjhlcHFtZzB3aHE5cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pQZ4WjFZYjHkIwtnzh/giphy.gif" alt="Demo GIF of Resume Generator" />
     </div>
   </main>
   <footer>
