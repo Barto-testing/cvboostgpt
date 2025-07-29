@@ -31,16 +31,6 @@
       color: #94a3b8;
       margin-top: 0.25rem;
     }
-    header p {
-      font-size: 1.25rem;
-      margin-top: 0.5rem;
-      color: #cbd5e1;
-    }
-    .hero-subtitle {
-      font-size: 1.1rem;
-      margin-top: 1.5rem;
-      color: #94a3b8;
-    }
     main {
       max-width: 700px;
       margin: 3rem auto;
@@ -69,7 +59,111 @@
       transform: scale(1.03);
       box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
     }
-    /* ... reszta bez zmian ... */
+    .stars {
+      text-align: center;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: #facc15;
+    }
+    .testimonial-carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+      scroll-snap-type: x mandatory;
+    }
+    .testimonial-box {
+      background-color: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      min-width: 250px;
+      scroll-snap-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .testimonial-box p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-box span {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .how-it-works {
+      margin-top: 3rem;
+    }
+    .how-it-works h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .how-it-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .step {
+      background-color: #0f172a;
+      border-left: 4px solid #22d3ee;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .step h4 {
+      margin: 0 0 0.5rem;
+      color: #67e8f9;
+    }
+    .stats {
+      margin: 2rem auto 1rem;
+      background: #334155;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #f8fafc;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .compare-table th,
+    .compare-table td {
+      border: 1px solid #334155;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    .compare-table th {
+      background-color: #475569;
+    }
+    .compare-table td {
+      background-color: #1e293b;
+    }
+    .secure-section {
+      margin-top: 3rem;
+      background-color: #0f172a;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+    .secure-section h3 {
+      color: #67e8f9;
+      margin-bottom: 0.5rem;
+    }
+    .secure-section p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -79,7 +173,48 @@
   </header>
   <main>
     <a class="btn" href="https://your-sellix-link.com">Generate My CV Now</a>
-    <!-- ... pozostała część strony ... -->
+
+    <div class="stats">
+      ⭐⭐⭐⭐⭐ Rated 4.9/5 by 7,300+ users
+    </div>
+
+    <div class="testimonial-carousel">
+      <div class="testimonial-box">
+        <p>“I got hired 3 days after using SmartCV. Amazing tool.”</p>
+        <span>— James R.</span>
+      </div>
+      <div class="testimonial-box">
+        <p>“Clean design and instant download. Worth every cent.”</p>
+        <span>— Anita B.</span>
+      </div>
+      <div class="testimonial-box">
+        <p>“I had zero clue how to write a CV. This fixed it.”</p>
+        <span>— Dario F.</span>
+      </div>
+      <div class="testimonial-box">
+        <p>“Finally a tool that works and doesn’t spam me.”</p>
+        <span>— Clara M.</span>
+      </div>
+    </div>
+
+    <div class="how-it-works">
+      <h3>⚙️ How It Works</h3>
+      <div class="how-it-steps">
+        <div class="step">
+          <h4>1. Fill Out Your Info</h4>
+          <p>Enter your work experience and skills in a simple form.</p>
+        </div>
+        <div class="step">
+          <h4>2. AI Generates a Perfect CV</h4>
+          <p>Our GPT-powered engine builds your resume instantly.</p>
+        </div>
+        <div class="step">
+          <h4>3. Download & Apply</h4>
+          <p>Get a beautiful PDF CV ready to send out.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="why-smartcv">
       <h3>💡 Why SmartCV?</h3>
       <ul>
@@ -135,6 +270,7 @@
       <h3>🔒 Secure Payments</h3>
       <p>Your payment is encrypted and securely processed. We never store card data and use trusted third-party providers to protect your privacy.</p>
     </div>
+
   </main>
   <footer>
     © 2025 SmartCV. Trusted by 7,300+ job hunters. Your career starts now.
