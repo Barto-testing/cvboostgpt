@@ -22,6 +22,7 @@
       padding: 3rem 1rem 1rem;
       text-align: center;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      position: relative;
     }
     header h1 {
       margin: 0;
@@ -37,6 +38,18 @@
       font-size: 1.1rem;
       margin-top: 1.5rem;
       color: #cbd5e1;
+    }
+    .hero-icon {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 48px;
+      height: 48px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
     }
     main {
       max-width: 700px;
@@ -92,14 +105,29 @@
       margin-bottom: 1.5rem;
       color: #374151;
     }
+    .stars {
+      text-align: center;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+      color: #facc15;
+    }
     .stats {
-      margin: 3rem auto 1rem;
+      margin: 2rem auto 1rem;
       background: #f0f9ff;
       padding: 1.5rem;
       border-radius: 0.75rem;
       text-align: center;
       font-size: 1.1rem;
       color: #1e3a8a;
+    }
+    .demo {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .demo img {
+      max-width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     footer {
       text-align: center;
@@ -115,6 +143,7 @@
 </head>
 <body>
   <header>
+    <img class="hero-icon" src="https://img.icons8.com/fluency/48/robot.png" alt="AI Icon">
     <h1>CVBoostGPT</h1>
     <p>Create a job-ready resume with AI in under 60 seconds</p>
     <div class="hero-subtitle">Your personal AI-powered CV assistant. No logins. No hassle.</div>
@@ -131,6 +160,10 @@
 
     <a href="YOUR_SELLIX_LINK_HERE" class="btn">🎯 Generate My Resume – $9.99</a>
 
+    <div class="stars">
+      ⭐⭐⭐⭐⭐ Rated <strong>4.9/5</strong> by over <strong>7,300 users</strong>
+    </div>
+
     <div class="testimonials">
       <h3>What others are saying:</h3>
       <div class="testimonial">"I landed 3 interviews in one week thanks to this resume!" – Sarah L.</div>
@@ -142,6 +175,10 @@
       ✅ Over <strong>5,000</strong> job seekers boosted their career with CVBoostGPT in the past 30 days.
     </div>
 
+    <div class="demo">
+      <h3>📽️ See it in action:</h3>
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWkyM3Brc2x3OXU4OHZ1cTVhdDJyNzNoYmdoYjhlcHFtZzB3aHE5cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/pQZ4WjFZYjHkIwtnzh/giphy.gif" alt="Demo GIF of Resume Generator" />
+    </div>
   </main>
   <footer>
     © 2025 CVBoostGPT. Trusted by 7,300+ job hunters. Your career starts now.
