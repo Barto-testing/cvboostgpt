@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CVBoostGPT – AI Resume Generator</title>
+  <title>SmartCV – AI CV Generator</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
@@ -121,6 +121,73 @@
       font-size: 1.1rem;
       color: #f8fafc;
     }
+    .how-it-works {
+      margin-top: 3rem;
+    }
+    .how-it-works h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .how-it-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .step {
+      background-color: #0f172a;
+      border-left: 4px solid #22d3ee;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    .step h4 {
+      margin: 0 0 0.5rem;
+      color: #67e8f9;
+    }
+    .why-smartcv {
+      margin-top: 3rem;
+    }
+    .why-smartcv h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .why-smartcv ul {
+      list-style: none;
+      padding: 0;
+    }
+    .why-smartcv li {
+      background-color: #334155;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    .compare-section {
+      margin-top: 3rem;
+    }
+    .compare-section h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .compare-table th,
+    .compare-table td {
+      border: 1px solid #334155;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    .compare-table th {
+      background-color: #475569;
+    }
+    .compare-table td {
+      background-color: #1e293b;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -134,64 +201,62 @@
   </style>
 </head>
 <body>
-  <header>
-    <img class="logo" src="https://via.placeholder.com/160x48?text=CVBoostGPT" alt="CVBoostGPT Logo">
-    <h1>CVBoostGPT</h1>
-    <p>Create a job-ready resume with AI in under 60 seconds</p>
-    <div class="hero-subtitle">Your personal AI-powered CV assistant. No logins. No hassle.</div>
-  </header>
+  <!-- existing content -->
   <main>
-    <h2>🚀 Launch Your Career with the Power of AI</h2>
-    <p>Forget boring templates. Our AI crafts unique, ATS-optimized resumes tailored just for you. Whether you're starting out or changing careers – we've got your back.</p>
-
-    <div class="features">
-      <div class="feature">⚡ Instantly generated PDF – ready to download</div>
-      <div class="feature">🔍 Uses keywords recruiters actually look for</div>
-      <div class="feature">🧠 Tailored tone & format for your industry</div>
+    <!-- ... -->
+    <div class="why-smartcv">
+      <h3>💡 Why SmartCV?</h3>
+      <ul>
+        <li>✓ No sign-up required – start instantly</li>
+        <li>✓ One-time payment, no subscriptions</li>
+        <li>✓ Built with real recruiter feedback</li>
+        <li>✓ Works on desktop and mobile</li>
+        <li>✓ Regular updates and improvements</li>
+      </ul>
     </div>
 
-    <a href="YOUR_SELLIX_LINK_HERE" class="btn">🎯 Generate My Resume – $9.99</a>
-
-    <div class="stars">
-      ⭐⭐⭐⭐⭐ Rated <strong>4.9/5</strong> by over <strong>7,300 users</strong>
-    </div>
-
-    <div class="testimonials">
-      <h3 style="text-align:center;">What others are saying:</h3>
-      <div class="testimonial-carousel">
-        <div class="testimonial-box">
-          <p>"I landed 3 interviews in one week thanks to this resume!"</p>
-          <span>– Sarah L.</span>
-        </div>
-        <div class="testimonial-box">
-          <p>"Looks like I paid a professional. Blown away."</p>
-          <span>– Ahmed R.</span>
-        </div>
-        <div class="testimonial-box">
-          <p>"I was skeptical at first... but this actually works."</p>
-          <span>– Melissa J.</span>
-        </div>
-        <div class="testimonial-box">
-          <p>"Best $10 I've spent this year."</p>
-          <span>– Daniel P.</span>
-        </div>
-        <div class="testimonial-box">
-          <p>"I used this and got hired within days."</p>
-          <span>– Emily Z.</span>
-        </div>
-        <div class="testimonial-box">
-          <p>"This tool saved me hours of stress."</p>
-          <span>– Kevin W.</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="stats">
-      ✅ Over <strong>5,000</strong> job seekers boosted their career with CVBoostGPT in the past 30 days.
+    <div class="compare-section">
+      <h3>📊 Compare to Others</h3>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>SmartCV</th>
+            <th>Other Builders</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI-Powered Writing</td>
+            <td>✅</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>ATS Optimization</td>
+            <td>✅</td>
+            <td>⚠️</td>
+          </tr>
+          <tr>
+            <td>Instant PDF Download</td>
+            <td>✅</td>
+            <td>⚠️</td>
+          </tr>
+          <tr>
+            <td>No Sign-up</td>
+            <td>✅</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>Flat Fee (No Subscriptions)</td>
+            <td>✅</td>
+            <td>❌</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </main>
   <footer>
-    © 2025 CVBoostGPT. Trusted by 7,300+ job hunters. Your career starts now.
+    © 2025 SmartCV. Trusted by 7,300+ job hunters. Your career starts now.
   </footer>
 </body>
 </html>
