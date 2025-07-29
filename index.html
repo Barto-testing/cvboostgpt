@@ -6,9 +6,12 @@
   <title>CVBoostGPT – AI Resume Generator</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9fafb;
+      background: linear-gradient(145deg, #f9fafb, #dbeafe);
       color: #111827;
       margin: 0;
       padding: 0;
@@ -16,62 +19,96 @@
     header {
       background-color: #1f2937;
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      letter-spacing: -1px;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      color: #d1d5db;
     }
     main {
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 1rem;
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 2rem;
       background: white;
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .feature {
+      background-color: #eff6ff;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid #3b82f6;
       border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      font-size: 1.05rem;
     }
     .btn {
-      display: block;
+      display: inline-block;
       width: 100%;
-      background-color: #3b82f6;
+      background: linear-gradient(to right, #3b82f6, #6366f1);
       color: white;
       text-align: center;
       padding: 1rem;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       border: none;
-      border-radius: 0.375rem;
+      border-radius: 0.5rem;
       text-decoration: none;
-      margin-top: 1.5rem;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+      transition: all 0.3s ease;
     }
-    ul {
-      padding-left: 1.25rem;
+    .btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.875rem;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
       color: #6b7280;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>CVBoostGPT</h1>
-    <p>The AI Resume Generator for 2025</p>
+    <p>Create a job-ready resume with AI in under 60 seconds</p>
   </header>
   <main>
-    <h2>Generate Your Resume Instantly</h2>
-    <p>Struggling to land interviews? Let our AI build a professional, ATS-optimized resume for you in seconds.</p>
-    <ul>
-      <li>🔍 Smart structure & keywords</li>
-      <li>✅ Ready-to-use PDF</li>
-      <li>🧠 Tailored to your experience</li>
-    </ul>
-    <a href="YOUR_SELLIX_LINK_HERE" class="btn">Generate My Resume – $9.99</a>
+    <h2>🚀 Launch Your Career with the Power of AI</h2>
+    <p>Forget boring templates. Our AI crafts unique, ATS-optimized resumes tailored just for you. Whether you're starting out or changing careers – we've got your back.</p>
+
+    <div class="features">
+      <div class="feature">⚡ Instantly generated PDF – ready to download</div>
+      <div class="feature">🔍 Uses keywords recruiters actually look for</div>
+      <div class="feature">🧠 Tailored tone & format for your industry</div>
+    </div>
+
+    <a href="YOUR_SELLIX_LINK_HERE" class="btn">🎯 Generate My Resume – $9.99</a>
   </main>
+
   <footer>
-    © 2025 CVBoostGPT. All rights reserved.
+    © 2025 CVBoostGPT. Trusted by 7,300+ job hunters. Your career starts now.
   </footer>
 </body>
 </html>
