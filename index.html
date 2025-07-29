@@ -20,12 +20,13 @@
       padding: 3rem 1rem 1rem;
       text-align: center;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      position: relative;
+    }
+    header img.logo {
+      width: 160px;
+      margin-bottom: 1rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 3rem;
-      letter-spacing: -1px;
+      display: none;
     }
     header p {
       font-size: 1.25rem;
@@ -36,18 +37,6 @@
       font-size: 1.1rem;
       margin-top: 1.5rem;
       color: #94a3b8;
-    }
-    .hero-icon {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 48px;
-      height: 48px;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.2); opacity: 0.8; }
     }
     main {
       max-width: 700px;
@@ -146,7 +135,7 @@
 </head>
 <body>
   <header>
-    <img class="hero-icon" src="https://img.icons8.com/fluency/48/robot.png" alt="AI Icon">
+    <img class="logo" src="https://via.placeholder.com/160x48?text=CVBoostGPT" alt="CVBoostGPT Logo">
     <h1>CVBoostGPT</h1>
     <p>Create a job-ready resume with AI in under 60 seconds</p>
     <div class="hero-subtitle">Your personal AI-powered CV assistant. No logins. No hassle.</div>
